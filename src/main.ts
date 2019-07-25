@@ -2,7 +2,6 @@ import { app, BrowserWindow } from 'electron';
 
 let win : BrowserWindow | null = null;
 function createWindow() {
-  console.info("createWindow()");
   if (win === null) {
     win = new BrowserWindow({ width: 800, height: 600 });
     win.on('closed', () => {
