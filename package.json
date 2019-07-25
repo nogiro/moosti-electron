@@ -1,0 +1,26 @@
+{
+  "name": "moosti-electron",
+  "version": "1.0.0",
+  "author": {
+    "name": "nogiro",
+    "email": "nogiro.temp@gmail.com"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git@nogiro.dip.jp:nogiro/moosti-electron.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "parcel build --target electron src/main.ts",
+    "type-check": "tsc --noEmit --resolveJsonModule --watch"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "electron": "^5.0.8",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.3"
+  }
+}
